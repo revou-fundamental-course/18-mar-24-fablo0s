@@ -1,44 +1,136 @@
 <!DOCTYPE html>
-    
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment Naufal</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-
 <body>
     <header class="header-container">
         <section class="logo-icon"></section>
         <section class="nav-container">
-            <button>Home</button>
-            <button>Our Pages</button>
-            <button>Call Us</button>
+            <button onclick="window.location.href='#home'">Home</button>
+            <button onclick="window.location.href='#pages'">Our Pages</button>
+            <button onclick="window.location.href='#contact'">Call Us</button>
         </section>
     </header>
     <hr>
-
-    <section class="section-container">
+    <section class="section-container" id="home">
         <header>
-            <h1>Ini Titlenya</h1>
-            <h3>Ini Subtitlenya</h3>
+            <h1>Seru-nya Bermain</h1>
+            <h3>Hi Selamat datang</h3>
         </header>
     </section>
     <div class="section-content-container">
         <!-- Ini Content AutoSlide Banner -->
-        <div style="height: 200px; 
-                    width: 100%; 
-                    background-color: antiquewhite;
-                    margin-right: 16px;">
+        <div class="banner-container" 
+                style="height: 500px; width: 50%; 
+                        background-color: rgb(255, 255, 255);
+                        margin-right: 16px; margin-bottom: 30px;">
+            <div class="banner-content">
+                <section class="pict-home"></section>
+                <section class="user" id="home">
+                    <center>
+                        <p>bermain jadi menyenangkan dengan naufal</p>
+                        <i class="fa-regular fa-user"></i>Naufal
+                        <h2>Use this space to provide users with more information about your offer. Consider it a follow-up to your headline and explain the benefits of your service or product</h2>
+                        <p>make your child happy</p>
+                        <p>can make children think critically</p>
+                    </center>
+                </section>
+            </div>
         </div>
         <!-- Ini Content Form -->
-        <div style="height: 200px; 
-                    width: 100%; 
-                    background-color: aliceblue;
-                    margin-left: 16px;">
-            <label>Username</label><br>
-            <input type="text" class="name-input"><br>
-            <button type="button">Send</button>
+        <div class="form-container" 
+                style="height: 500px; width: 50%; 
+                        background-color: white;
+                        margin-left: 16px;">
+            <h1>Contact Us</h1>
+            <p>Sales will contact you within 1x24 hours after we receive your data.</p>
+            <form action="#">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" class="label" placeholder="First and last name" required>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" class="label" placeholder="example@gmail.com" required>        
+                <label for="interest">Choose your school level:</label>
+                <select id="tingkat" class="label" name="tingkat" required>
+                    <option value="sekolah-dasar">SD</option>
+                    <option value="sekolah-menengah-pertama">SMP</option>
+                    <option value="sekolah-menengah-awal">SMA</option>
+                    <option value="sekolah-menengah-kejuruan">SMK</option>
+                </select>
+                <input type="submit" value="SEND">
+            </form>
         </div>
     </div>
+
+    <section class="box" id="pages">
+    <div class="page1" id="pages"
+                style="margin-left: 20px;
+                margin-right: 50px;
+                height: 240px; 
+                width: 30%;
+                background-color:red;
+                margin-left: 16px;">
+    </div>       
+    <div class="page2" id="pages"
+            style="margin-left: 90px;
+                    margin-right: 50px;
+                    height: 240px; 
+                    width: 30%;
+                    background-color:orange;
+                    margin-left: 16px;">
+    </div>       
+    <div class="page3" id="pages"
+            style="margin-left: 90px;
+                    margin-right: 50px;
+                    height: 240px; 
+                    width: 30%;
+                    background-color:yellow;
+                    margin-left: 16px;">
+    </div>       
+    </section><br>
+
+    <section class="box2" id="pages">
+        <div class="page4" id="pages"
+                    style="margin-left: 20px;
+                            margin-right: 50px;
+                            height: 240px; 
+                            width: 30%;
+                            background-color: green;
+                            margin-left: 16px;">
+        </div>       
+        <div class="page5" id="pages"
+                style="margin-left: 90px;
+                        margin-right: 50px;
+                        height: 240px; 
+                        width: 30%;
+                        background-color:blue;
+                        margin-left: 16px;">
+        </div>       
+        <div class="page6" id="pages"
+                style="margin-left: 90px;
+                        margin-right: 50px;
+                        height: 240px; 
+                        width: 30%;
+                        background-color:purple;
+                        margin-left: 16px;">
+        </div>       
+        </section><br>
+
+    <footer class="footer-container">
+        <section class="call-to-action" id="contact">
+            <center>
+                <h1>Your Closing Argument Headline</h1>
+                <p>Suspending egestas rhoncus urna in bibendum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni harum possimus cum voluptatem a repellendus exercitationem dolore amet veniam error. Eveniet aliquam dignissimos aspernatur perferendis dolores consequuntur doloribus amet et.</p><br>
+                <i class="fa-brands fa-instagram"></i> @nnauflz 
+                <i class="fa-brands fa-spotify"></i> nauflou 
+            </center>
+        </section>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
